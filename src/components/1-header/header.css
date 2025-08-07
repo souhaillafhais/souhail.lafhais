@@ -1,0 +1,165 @@
+/*header design*/
+
+
+header.flex {
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin-top: 1.2rem;
+ 
+
+}
+
+header.flex nav {
+    background-color: var(--bgh);
+    padding: 0.77rem 1.6rem;
+    border-radius: 70px;
+    box-shadow: 1px 1px 80px 10px var(--col);
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header ul.flex {
+    gap: 50px;
+}
+
+header ul li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 1rem;
+    font-weight: 600;
+    transition:0.3s;
+}
+
+header ul li a:hover {
+    color: var(--ich);
+    opacity: 1;
+    font-size: 1.3rem;
+
+}
+
+
+/*BUTTONS*/
+
+header button {
+    font-size: 1.2em;
+}
+
+header button.menu {
+    display: none;
+}
+
+
+
+
+
+/*Modal pop up*/
+
+header .fixed {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(46, 79, 79, 0.91);
+    z-index: 11;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes mymove {
+    0% {
+        scale: 0;
+    }
+    60%{
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+
+header .fixed ul.modal {
+    animation: mymove 0.8s 1;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+}
+
+header .fixed ul.modal li {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.77rem;
+}
+
+
+header .fixed ul.modal li:first-child {
+    text-align: right;
+    border: none;
+    margin-bottom: -2rem;
+    padding-top: 0.2rem;
+}
+
+header .fixed ul.modal li:last-child {
+    border: none;
+}
+
+/*ICONS*/
+
+
+header .icon-menu, header button.mode{
+    background-color: var(--bgh) ;
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--sub-title);
+    border: 2px solid var(--col);
+    transition: 0.1s;
+    box-shadow: 2px 2px 50px var(--col);
+}
+
+header .icon-menu:hover, header button.mode:hover{
+    color: var(--title);
+}
+
+header button.mode{
+box-shadow: 2px 2px 50px var(--col);
+}
+
+header .icon-close{
+    font-size: 1.5rem;
+    color: var(--sub-title);
+    transition: 0.3s;
+   
+}
+
+
+header .icon-close:hover{
+    font-size: 1.8rem;
+    color: crimson;
+    rotate: 180deg;
+    
+}
+
+
+
+.icon-sun{
+    color:rgb(255, 187, 0);
+}
+
+
+/*Responsive design (media query)*/
+
+
+
+
+@media (max-width: 830px) {
+    header.flex nav {
+        display: none;
+    }
+
+    header button.menu {
+        display: block;
+    }
+}

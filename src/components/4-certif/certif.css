@@ -1,0 +1,134 @@
+.certif-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.certif-section .title {
+  font-size: 2.5rem;
+  color: var(--title);
+  margin-bottom: 50px;
+}
+
+.certif-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.certif-category {
+  background: var(--secondary);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 24px 18px 8px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 520px;
+  height: 100%;
+}
+
+.category-title {
+  font-size: 1.3rem;
+  color: var(--sub-title);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.certif-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.certif-item {
+  background: var(--bgh);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.certif-name {
+  font-size: 1.1rem;
+  color: var(--col);
+  font-weight: 500;
+}
+
+.certif-issuer {
+  font-size: 0.95rem;
+  color: var(--sub-title);
+  margin-top: 2px;
+}
+
+.certif-btn {
+  margin-top: 8px;
+  background: var(--col);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.certif-btn:hover {
+  background: var(--mode);
+}
+
+.certif-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.certif-modal-content {
+  background: var(--secondary);
+  border-radius: 12px;
+  padding: 18px 18px 8px 18px;
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.certif-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--col);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.certif-modal iframe {
+  border-radius: 8px;
+  background: #fff;
+  width: 100%;
+  min-width: 300px;
+  min-height: 400px;
+  max-height: 70vh;
+}
+
+.certif-direct-pdf {
+  border-radius: 8px;
+  background: #fff;
+  width: 100%;
+  min-width: 200px;
+  min-height: 260px;
+  max-height: 420px;
+  margin-top: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}

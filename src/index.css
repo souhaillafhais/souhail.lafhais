@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  scroll-behavior: smooth;
+}
+
+
+
+html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+:root {
+  --primary: #000;
+  --secondary: rgb(28, 26, 26);
+  --border: rgba(44,51,51,0.5);
+  --title :#fff;
+  --sub-title:#b0a9a9;
+  --bgh:rgb(39,39,42);
+  --main:rgb(39,39,42);
+  --icon:#b0a9a9;
+  --col:rgb(14,131,136);
+  --ich:rgb(14,131,136);
+  --filter:rgb(39,39,42);
+  --input:rgb(39,39,42);
+  --submit:rgb(39,39,42);
+  --footer:#fff;
+  --container-padding:4rem;
+  --border:rgb(14,131,136);
+  --color:#fff;
+  --borderf:rgba(255, 255, 255, 0.5);
+  --name:rgb(255, 255, 255);
+  --av:rgb(255, 255, 255);
+  --mode:rgb(14,131,136);
+  
+}
+
+.light {
+  --primary: #ffffff;
+  --secondary:#fff;
+  --title: #000;
+  --bgh:#ffffff;
+  --sub-title:#000;
+  --col:#000;
+  --icon:rgb(0, 0, 0);
+  --input:rgb(224, 224, 235);
+  --submit:rgb(0, 0, 0);
+  --footer:#000;
+  --border:rgba(44,51,51,0.5);
+  --borderf:rgba(44,51,51,0.5);
+  --color: #000;
+  --name:rgb(14,131,136);
+  --av:rgb(14,131,136);
+  --mode:rgb(255, 187, 0);
+  --hover: #d5d1d1;
+  
+
+}
+
+body {
+  background-color: black;
+  color:white;
+  
+  
+}
+
+.container{
+  border: 2px solid var(--col);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary);
+  padding: 0 var(--container-padding);
+}
+
+.line{
+  border-bottom:1px solid rgba(44,51,51,0.5);
+  margin: 7rem 0;
+  width: calc(100% + var(--container-padding) + var(--container-padding) );
+  margin-left: calc( var(--container-padding) *-1);
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+a:hover{
+  cursor: pointer;
+}
+.flex{
+  display: flex;
+  align-items: center;
+
+}
+
+.border{
+  border: 2px solid red;
+}
+
+button{
+  all:unset;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button:active{
+  scale:0.85;
+}
+button:disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+::-webkit-scrollbar {
+  width: 1rem;
+ }
+ 
+::-webkit-scrollbar-track {
+  border: 7px solid #3B4043;
+  background-color: #3B4043;
+  }
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--col);
+ 
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background:#0b5e61;
+}
+
+
+
+.scroll{
+  background-color: rgba(14, 132, 136, 0.61);
+  font-size: 2rem;
+  border-radius: 55px;
+  transition: 0.3s;
+  bottom: 4rem;
+  right: 1.6rem;
+  position: fixed;
+  border: 1px solid rgba(255, 255, 255, 0.379);
+}
+
+
+.scroll:hover{
+  background-color:var(--col);
+  scale: 1.1;
+}
+
+
+.icon-up{
+  background-color: var(--col);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px){
+  .container{
+    width: 99%;
+    padding: 0 1.8rem;
+  }
+  .scroll{
+    bottom: 8.3rem;
+    font-size: 1.5rem;
+    right: 0.7rem;
+    opacity: 50%;
+  }
+}
+
+@media (max-width: 1000px){
+  .container{
+    --container-padding:1.8rem;
+    width: 99%;
+    padding: 0 var(--container-padding);
+  }
+  .line{
+    width: calc(100% + var(--container-padding) + var(--container-padding) );
+    margin-left: calc(var(--container-padding)*-1);
+  }
+}

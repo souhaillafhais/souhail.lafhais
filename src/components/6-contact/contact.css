@@ -1,0 +1,125 @@
+section.contact-us .icon-mail {
+    color: var(--sub-title);
+    margin-right: 1rem;
+    font-size: 1.9rem;
+    
+}
+
+section.contact-us .title {
+    font-size: 2.1rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+}
+
+
+section.contact-us .sub-title {
+    color: var(--sub-title);
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+
+
+section.contact-us label {
+    color: var(--icon);
+}
+
+
+
+section.contact-us #email, section.contact-us #message {
+    all: unset;
+    background-color: var(--input);
+    border: 2px solid rgba(207, 248, 248, 0.198);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: 0.4s;
+    font-size: 1.1rem;
+
+}
+
+section.contact-us #email:focus, section.contact-us #message:focus {
+    border: 2px solid var(--col);
+}
+
+section.contact-us #email:hover, section.contact-us #message:hover {
+    border: 2px solid var(--col);
+}
+
+section.contact-us #email{
+    color: var(--icon);
+}
+
+section.contact-us #message {
+    min-width: 16.06rem;
+    min-height: 10rem;
+    resize:both;
+    color: var(--icon);
+    transition: 0.0000001s;
+}
+
+
+section.contact-us button.submit {
+    background-color: var(--submit);
+    width: 25.5rem;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 0.89rem;
+    text-transform: capitalize;
+    margin-top: 4rem;
+    border-radius: 10px;
+    font-weight: 300;
+    transition: 0.3s;
+   
+}
+
+section.contact-us button.submit:hover {
+    scale: 0.96;
+
+}
+
+p.submit{
+    color: var(--title);
+    margin-top: 1.7rem;
+    font-size:larger;
+}
+
+
+@media (max-width: 1000px){
+    .contact-animation{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    section.contact-us .animation {
+        display: none;
+    }
+
+    section.contact-us form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    section.contact-us form div.flex {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    section.contact-us #email, section.contact-us #message {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 1rem;
+        padding: 0.7rem 0;
+        
+    }
+    section.contact-us button.submit{
+        width: 30%;
+        align-self: center;
+    }
+}

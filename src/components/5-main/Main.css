@@ -1,0 +1,169 @@
+main.flex {
+    gap: 1.6rem;
+    align-items: start;
+}
+
+
+/*LEFT SECTION*/
+
+main section.left-section.flex {
+    flex-direction: column;
+    gap: 10px;
+}
+
+main section.left-section.flex button {
+    background-color: var(--border);
+   color: var(--color);
+    width: 7rem;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 0.89rem;
+    opacity: 0.5;
+    border-radius: 12px;
+    transition: background-color 0.15s, opacity 0.15s, width 0.15s, font-weight 0.15s, letter-spacing 0.15s, padding 0.15s, border 0.15s, transform 0.15s;
+}
+
+main section.left-section.flex button.active {
+    opacity: 1;
+    width: 7rem;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.7rem;
+    border: 2px solid var(--borderf);
+}
+
+main section.left-section.flex button:hover {
+    transform: scale(1.1);
+}
+
+main section.left-section.flex button:not(:hover) {
+    transform: scale(1);
+}
+
+
+/*RIGHT SECTION*/
+
+main section.right-section.flex {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 10px;
+    column-gap: 5px;
+    justify-content: center;
+    width: 700px;
+
+
+
+}
+
+
+
+.card {
+    border: 2px solid var(--col);
+    border-radius: 5px;
+    transition: 0.3s;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.085), rgba(255, 255, 255, 0));
+}
+
+
+.card:hover {
+    border: 1.4px solid var(--col);
+    scale: 1.02;
+    rotate: 1deg;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px var(--col);
+}
+
+
+
+.card:not(:hover) {
+    scale: 1;
+    transition: 0.5s;
+    border: 1.4px solid var(--col);
+}
+
+.card .img {
+    padding: 0.07rem;
+    border-radius: 5px;
+    height: 270px;
+    width: 700;
+    
+}
+
+.card .box {
+    padding: 1rem 0.8rem;
+}
+
+.card .box .title {
+    color: var(--ich);
+    text-transform: capitalize;
+}
+
+.card .box .sub-title {
+    color: var(--title);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.1rem;
+}
+
+.card .box .icons {
+    justify-content: space-between;
+}
+
+.card .icon-github, .card .icon-arrow_forward {
+    font-size: 1.2rem;
+    color: var(--sub-title);
+}
+
+.card .icon-github:hover, .card .icon-arrow_forward:hover {
+    font-size: 1.3rem;
+    color: rgb(14,131,136);
+    cursor: pointer;
+
+}
+
+.card a.link {
+    font-size: 0.9rem;
+    color: var(--sub-title);
+    margin-right: 12px;
+}
+
+.card a.link:hover {
+    font-size: 1rem;
+    color: var(--ich);
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    main.flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+
+    }
+
+    main section.left-section.flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.6rem;
+    }
+
+    main section.left-section.flex button {
+        width: 5rem;
+        padding: 0.7rem;
+        font-size: 0.77rem;
+        font-weight: 300;
+    }
+
+    main section.left-section.flex {
+        flex-direction: row;
+        gap: 6px;
+
+    }
+}
